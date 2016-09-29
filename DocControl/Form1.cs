@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DocControl.Dao;
 
 namespace DocControl
 {
@@ -15,6 +16,13 @@ namespace DocControl
         public Form1()
         {
             InitializeComponent();
+            ConectaBD conn = new Dao.ConectaBD();
+            conn.Conecta();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
