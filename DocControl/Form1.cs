@@ -24,5 +24,17 @@ namespace DocControl
         {
 
         }
+
+        private void tsNovoDoc_Click(object sender, EventArgs e)
+        {
+            pAddDoc.Visible = true;
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            pAddDoc.Visible = false;
+            txtNome.Clear();
+            txtEmpresa.Clear();
+        }
     }
 }

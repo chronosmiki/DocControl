@@ -23,10 +23,7 @@ namespace DocControl.Dao
             }catch(MySqlException ex)
             {
                 MessageBox.Show("Erro ao conectar no banco de dados \n" + ex.Message, "Erro ao conectar no Banco de Dados", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-            MessageBox.Show("Conectado com sucesso!", "Conexão ao Banco de Dados", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+            }                        
             return conn;
         }
 
